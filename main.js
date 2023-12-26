@@ -47,10 +47,10 @@ function atualizaTab(){
 }
 
 function formatarNumero(numero) {
-    if (numero % 1 === 0 || numero.toFixed(1) % 1 === 0) {
+    if (numero % 1 === 0 || numero.toFixed(2) % 1 === 0) {
         return numero.toLocaleString(); 
     } else {
-        return numero.toLocaleString('pt-BR', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+        return numero.toLocaleString('pt-BR', { minimumFractionDigits: 1, maximumFractionDigits: 2 });
     }
 }
 
